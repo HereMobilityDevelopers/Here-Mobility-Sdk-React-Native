@@ -1,0 +1,4719 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>react-native-here-mobility-sdk 1.0.6 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>react-native-here-mobility-sdk</h3>
+          <div class='mb1'><code>1.0.6</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+
+
+                <li><a
+                  href='#heremobilitysdk'
+                  class=" toggle-sibling">
+                  HereMobilitySDK
+                  <span class='icon'>▸</span>
+                </a>
+
+                <div class='toggle-target display-none'>
+
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+
+                      <li><a
+                        href='#heremobilitysdksetuser'
+                        class='regular pre-open'>
+                        .setUser
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkgetuser'
+                        class='regular pre-open'>
+                        .getUser
+                      </a></li>
+
+                    </ul>
+
+
+
+
+                </div>
+
+                </li>
+
+
+                <li><a
+                  href='#heremobilitysdkdemand'
+                  class=" toggle-sibling">
+                  HereMobilitySDKDemand
+                  <span class='icon'>▸</span>
+                </a>
+
+                <div class='toggle-target display-none'>
+
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandgetrideoffers'
+                        class='regular pre-open'>
+                        .getRideOffers
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandcreateride'
+                        class='regular pre-open'>
+                        .createRide
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandgetride'
+                        class='regular pre-open'>
+                        .getRide
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandcancelride'
+                        class='regular pre-open'>
+                        .cancelRide
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandgetrides'
+                        class='regular pre-open'>
+                        .getRides
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandregisterforridesupdates'
+                        class='regular pre-open'>
+                        .registerForRidesUpdates
+                      </a></li>
+
+                      <li><a
+                        href='#heremobilitysdkdemandunregisterfromridesupdates'
+                        class='regular pre-open'>
+                        .unregisterFromRidesUpdates
+                      </a></li>
+
+                    </ul>
+
+
+
+
+                </div>
+
+                </li>
+
+
+                <li><a
+                  href='#latlng'
+                  class="">
+                  LatLng
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#address'
+                  class="">
+                  Address
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#waypoint'
+                  class="">
+                  Waypoint
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridewaypoints'
+                  class="">
+                  RideWaypoints
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#pricerange'
+                  class="">
+                  PriceRange
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#transitoptions'
+                  class="">
+                  TransitOptions
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#bookingconstraints'
+                  class="">
+                  BookingConstraints
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#rideofferrequestsorttype'
+                  class="">
+                  RideOfferRequestSortType
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#rideoffersrequest'
+                  class="">
+                  RideOffersRequest
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#transittype'
+                  class="">
+                  TransitType
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#price'
+                  class="">
+                  Price
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#priceestimate'
+                  class="">
+                  PriceEstimate
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#cancellationpolicy'
+                  class="">
+                  CancellationPolicy
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#supplier'
+                  class="">
+                  Supplier
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#heremobilitydemanderror'
+                  class="">
+                  HereMobilityDemandError
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#driverdetails'
+                  class="">
+                  DriverDetails
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#vehicletype'
+                  class="">
+                  VehicleType
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#vehicle'
+                  class="">
+                  Vehicle
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridestatus'
+                  class="">
+                  RideStatus
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridestatuslog'
+                  class="">
+                  RideStatusLog
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#riderecord'
+                  class="">
+                  RideRecord
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridelocation'
+                  class="">
+                  RideLocation
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#passengerdetails'
+                  class="">
+                  PassengerDetails
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#cancellingparty'
+                  class="">
+                  CancellingParty
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#cancellationstatus'
+                  class="">
+                  CancellationStatus
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#cancellationinfo'
+                  class="">
+                  CancellationInfo
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ride'
+                  class="">
+                  Ride
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#statusfilter'
+                  class="">
+                  StatusFilter
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridequerysorttype'
+                  class="">
+                  RideQuerySortType
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridequery'
+                  class="">
+                  RideQuery
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#ridequeryresponse'
+                  class="">
+                  RideQueryResponse
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#rideofferbase'
+                  class="">
+                  RideOfferBase
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#taxirideoffer'
+                  class="">
+                  TaxiRideOffer
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#publictransportrideoffer'
+                  class="">
+                  PublicTransportRideOffer
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#transportmode'
+                  class="">
+                  TransportMode
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#publictransportrouteleg'
+                  class="">
+                  PublicTransportRouteLeg
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#rideoffers'
+                  class=" toggle-sibling">
+                  RideOffers
+                  <span class='icon'>▸</span>
+                </a>
+
+                <div class='toggle-target display-none'>
+
+
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+
+                      <li><a
+                        href='#rideoffersall'
+                        class='regular pre-open'>
+                        #all
+                      </a></li>
+
+                      <li><a
+                        href='#rideofferstaxioffers'
+                        class='regular pre-open'>
+                        #taxiOffers
+                      </a></li>
+
+                      <li><a
+                        href='#rideofferspublictransportoffers'
+                        class='regular pre-open'>
+                        #publicTransportOffers
+                      </a></li>
+
+                    </ul>
+
+
+
+                </div>
+
+                </li>
+
+
+                <li><a
+                  href='#user'
+                  class="">
+                  User
+
+                </a>
+
+                </li>
+
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='heremobilitysdk'>
+      HereMobilitySDK
+    </h3>
+
+
+  </div>
+
+
+  <p>The client wrapper for accessing the HereSDKManager API.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new HereMobilitySDK()</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+
+    <div class='border-bottom' id='heremobilitysdksetuser'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>setUser(user, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Sets a HereSDKUser instance to SDK. null to unregister user.</p>
+
+
+  <div class='pre p1 fill-light mt0'>setUser(user: <a href="#user">User</a>, callback: any)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>user</span> <code class='quiet'>(<a href="#user">User</a>)</code>
+	    The unique ID of the user.
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(any)</code>
+	    Callback which will be called with either nil or error.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkgetuser'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getUser(callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Gets current HereSDKUser instance logged in.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getUser(callback: function (user: <a href="#user">User</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (user: <a href="#user">User</a>?): void)</code>
+	    Callback which will be called with either nil or user.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='heremobilitysdkdemand'>
+      HereMobilitySDKDemand
+    </h3>
+
+
+  </div>
+
+
+  <p>The client wrapper for accessing the Demand API, used for requesting, booking and managing rides.
+HERE Mobility offers a mobility platform solution to transportation service providers, businesses, and consumers. The platform consists of the HERE Mobility Marketplace and SDK packages.
+The HERE Mobility Marketplace is a "broker" between transportation suppliers and consumers, which matches up ride requests with ride offers. The HERE Mobility SDK enables developers to create apps with a variety of mobility features, while connecting to the HERE Mobility Marketplace.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new HereMobilitySDKDemand()</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+
+    <div class='border-bottom' id='heremobilitysdkdemandgetrideoffers'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getRideOffers(request, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Request ride offers that match a given request.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getRideOffers(request: <a href="#rideoffersrequest">RideOffersRequest</a>, callback: function (response: <a href="#rideoffers">RideOffers</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>request</span> <code class='quiet'>(<a href="#rideoffersrequest">RideOffersRequest</a>)</code>
+	    Ride offers request parameters.
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (response: <a href="#rideoffers">RideOffers</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</code>
+	    Callback which will be called with the result. First parameter is the ride offers array. second  is error (if any).
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkdemandcreateride'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>createRide(rideOfferId, passengerDetails, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Create a new ride object with the given offer ID.</p>
+
+
+  <div class='pre p1 fill-light mt0'>createRide(rideOfferId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, passengerDetails: <a href="#passengerdetails">PassengerDetails</a>, callback: function (response: <a href="#ride">Ride</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rideOfferId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The ride offer ID received from requestRide
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>passengerDetails</span> <code class='quiet'>(<a href="#passengerdetails">PassengerDetails</a>)</code>
+	    Details about the passenger booking the ride (name, phone number, photo URL).
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (response: <a href="#ride">Ride</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</code>
+	    Callback which will be called with the result. First parameter is the ride object. second  is error (if any)
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkdemandgetride'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getRide(rideId, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Get a ride by rideId.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getRide(rideId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, callback: function (response: <a href="#ride">Ride</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rideId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The ID of the ride to retrieve.
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (response: <a href="#ride">Ride</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</code>
+	    Callback which will be called with the result. First parameter the ride object, second is error(if any).
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkdemandcancelride'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>cancelRide(rideId, reason, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Cancel a ride</p>
+
+
+  <div class='pre p1 fill-light mt0'>cancelRide(rideId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, reason: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, callback: function (cancellationInfo: <a href="#cancellationinfo">CancellationInfo</a>?, err: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rideId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The ID of the ride to be cancelled.
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>reason</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The cancellation reason.
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (cancellationInfo: <a href="#cancellationinfo">CancellationInfo</a>?, err: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</code>
+	    return information about the cancellation request (e.g. whether the request was accepted or rejected) or err if any.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkdemandgetrides'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getRides(rideQuery, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Query for rides with the given statuses and update time.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getRides(rideQuery: <a href="#ridequery">RideQuery</a>?, callback: function (response: <a href="#ridequeryresponse">RideQueryResponse</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rideQuery</span> <code class='quiet'>(<a href="#ridequery">RideQuery</a>?)</code>
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(function (response: <a href="#ridequeryresponse">RideQueryResponse</a>?, error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): void)</code>
+	    Callback which will be called with the result. First parameter is an array of rides, second is error(if any).
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkdemandregisterforridesupdates'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>registerForRidesUpdates(rideStatusChanged, rideLocationChanged, error)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Register for rides updates.
+Only one simultaneous registration is possible from this module.</p>
+
+
+  <div class='pre p1 fill-light mt0'>registerForRidesUpdates(rideStatusChanged: function (ride: <a href="#ride">Ride</a>, rideStatusLog: <a href="#ridestatuslog">RideStatusLog</a>): void, rideLocationChanged: function (ride: <a href="#ride">Ride</a>, rideLocation: <a href="#ridelocation">RideLocation</a>): void, error: function (error: <a href="#heremobilitydemanderror">HereMobilityDemandError</a>?): void)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rideStatusChanged</span> <code class='quiet'>(function (ride: <a href="#ride">Ride</a>, rideStatusLog: <a href="#ridestatuslog">RideStatusLog</a>): void)</code>
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rideLocationChanged</span> <code class='quiet'>(function (ride: <a href="#ride">Ride</a>, rideLocation: <a href="#ridelocation">RideLocation</a>): void)</code>
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>error</span> <code class='quiet'>(function (error: <a href="#heremobilitydemanderror">HereMobilityDemandError</a>?): void)</code>
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='heremobilitysdkdemandunregisterfromridesupdates'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unregisterFromRidesUpdates()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>Unregister from rides updates.</p>
+
+
+  <div class='pre p1 fill-light mt0'>unregisterFromRidesUpdates()</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='latlng'>
+      LatLng
+    </h3>
+
+
+  </div>
+
+
+  <p>Represents a location on the planet, defined as a (latitude, longitude) pair.</p>
+
+
+  <div class='pre p1 fill-light mt0'>LatLng</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>lat</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The latitude; between -90 and 90 degrees, inclusive.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>lng</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The longitude; between -180 (inclusive) and 180 (exclusive) degrees.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='address'>
+      Address
+    </h3>
+
+
+  </div>
+
+
+  <p>A generic address type. Note that due to the many different address standards, and different uses of this class, all of its fields are optionals.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Address</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>countryName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the country name.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>countryCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the ISO 3166 Alpha 3 country code.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>stateName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the state name (if relevant).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>cityName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the city name.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>districtName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the district name (if relevant).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>streetName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the street name.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>houseNumber</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the house number.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>postalCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the postal code.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>county</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the county (second subdivision level below the country).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>subDistrict</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the sub-district (subdivision level below the district; e.g. commonly used in IND).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>building</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the building name (e.g. commonly used in HKG).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>addressLines</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>)</code>
+          : Optional, the formatted address lines, as they would have been written on an envelope. This field is optional, and may contain empty list.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='waypoint'>
+      Waypoint
+    </h3>
+
+
+  </div>
+
+
+  <p>Waypoint Type, that encapsulates a LatLng type, and additional information.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Waypoint</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>location</span> <code class='quiet'>(<a href="#latlng">LatLng</a>)</code>
+          : Location of the waypoint.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>address</span> <code class='quiet'>(<a href="#address">Address</a>)</code>
+          : Optional, address of the waypoint, null if no address exists.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>description</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, sets the free text description of the waypoint.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridewaypoints'>
+      RideWaypoints
+    </h3>
+
+
+  </div>
+
+
+  <p>The route of the ride, composed of the pickup location and the destination.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideWaypoints</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>pickup</span> <code class='quiet'>(<a href="#waypoint">Waypoint</a>)</code>
+          : Pickup waypoint.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>destination</span> <code class='quiet'>(<a href="#waypoint">Waypoint</a>)</code>
+          : Destination waypoint.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='pricerange'>
+      PriceRange
+    </h3>
+
+
+  </div>
+
+
+  <p>Range of the price.</p>
+
+
+  <div class='pre p1 fill-light mt0'>PriceRange</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>lowerBound</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Minimum amount.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>upperBound</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Maximum amount.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>currencyCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Currency code.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='transitoptions'>
+      TransitOptions
+    </h3>
+
+
+  </div>
+
+
+  <p>Options relevant to public transport offers.</p>
+
+
+  <div class='pre p1 fill-light mt0'>TransitOptions</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>maxAllowedTransfers</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Optional, maximum number of allowed transportation method changes. Allowed values are between 0-6, or null . If null is given, there will be no limit on the number of transfers.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>maxWalkingDistance</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Optional, maximum walking distance in the offer. The measurement unit is meters. valid values are between 0-6000 meters. The default value is 2000 meters.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>locale</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the locale to use for the
+<a href="#publictransportrideoffer">PublicTransportRideOffer</a>
+. Complies with the ISO 639-1 standard. The default is "EN".
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='bookingconstraints'>
+      BookingConstraints
+    </h3>
+
+
+  </div>
+
+
+  <p>Constraints that the supplier must fulfill for the current booking.</p>
+
+
+  <div class='pre p1 fill-light mt0'>BookingConstraints</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>passengerCount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Number of passengers on the ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>suitcaseCount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Number of suitcases on the ride.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='rideofferrequestsorttype'>
+      RideOfferRequestSortType
+    </h3>
+
+
+  </div>
+
+
+
+
+  <div class='pre p1 fill-light mt0'>RideOfferRequestSortType</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>BY_PRICE</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Sort offers by price (lowest price first)
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>BY_ETA</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Sort offers by ETA to the pickup point (shortest ETA first)
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='rideoffersrequest'>
+      RideOffersRequest
+    </h3>
+
+
+  </div>
+
+
+  <p>Request from the SDK to the server for ride offers.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideOffersRequest</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>rideWaypoints</span> <code class='quiet'>(<a href="#ridewaypoints">RideWaypoints</a>)</code>
+          : The requested route.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>constraints</span> <code class='quiet'>(<a href="#bookingconstraints">BookingConstraints</a>)</code>
+          : Optional, conditions that the supplier must accommodate, such as number of passengers, wheelchair access, etc.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>prebookPickupTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Optional pre-booked pickup time, if the ride is requested for more than 30 minutes in the future. The time is given in milliseconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>priceRange</span> <code class='quiet'>(<a href="#pricerange">PriceRange</a>)</code>
+          : Optional price range acceptable to the passenger.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>sortType</span> <code class='quiet'>(<a href="#rideofferrequestsorttype">RideOfferRequestSortType</a>)</code>
+          : Optional sort type. If not given, the order is by price, and then by ETA.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>passengerNote</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+          : Optional note from the passenger.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>transitOptions</span> <code class='quiet'>(<a href="#transitoptions">TransitOptions</a>)</code>
+          : Optional Transit options. This will affect the public transport offers.
+*
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='transittype'>
+      TransitType
+    </h3>
+
+
+  </div>
+
+
+  <p>The type of the offer.</p>
+
+
+  <div class='pre p1 fill-light mt0'>TransitType</div>
+
+    <p>
+      Type:
+      (<code>"TAXI"</code> | <code>"PUBLIC_TRANSPORT"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>TAXI</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>PUBLIC_TRANSPORT</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='price'>
+      Price
+    </h3>
+
+
+  </div>
+
+
+  <p>Price object with the amount to pay and the currency.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Price</div>
+
+    <p>
+      Type:
+      {amount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, currencyCode: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>amount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The amount to pay.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>currencyCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The ISO 4217 currency code of the price.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>amount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>currencyCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='priceestimate'>
+      PriceEstimate
+    </h3>
+
+
+  </div>
+
+
+  <p>Estimation of the price, produced either by the HERE Marketplace or by a ride supplier.
+The estimate can be either a single fixed price or a price range.</p>
+<p>The recommended way to use this class is as follows:</p>
+
+
+  <div class='pre p1 fill-light mt0'>PriceEstimate</div>
+
+    <p>
+      Type:
+      {fixedPrice: <a href="#price">Price</a>, priceRange: <a href="#pricerange">PriceRange</a>}
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>fixedPrice</span> <code class='quiet'>(<a href="#price">Price</a>)</code>
+          : The fixed price, if exists. The fixed price. Null if the estimation is a range.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>priceRange</span> <code class='quiet'>(<a href="#pricerange">PriceRange</a>)</code>
+          : The price range, if exists. The price range. Null if the estimation is a fixed price.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>fixedPrice</span> <code class='quiet'>(<a href="#price">Price</a>)</code>
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>priceRange</span> <code class='quiet'>(<a href="#pricerange">PriceRange</a>)</code>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+
+
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { fixedPrice, priceRange } = estimatedPrice;
+<span class="hljs-keyword">if</span> (fixedPrice) {
+  <span class="hljs-keyword">const</span> { amount, currencyCode } = fixedPrice;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'price: '</span> + amount + <span class="hljs-string">" "</span> + currencyCode);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">const</span> { lowerBound, upperBound, currencyCode } = priceRange;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'price: '</span> + lowerBound + <span class="hljs-string">"-"</span> + upperBound + <span class="hljs-string">" "</span> + currencyCode);
+}</pre>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='cancellationpolicy'>
+      CancellationPolicy
+    </h3>
+
+
+  </div>
+
+
+
+
+  <div class='pre p1 fill-light mt0'>CancellationPolicy</div>
+
+    <p>
+      Type:
+      (<code>"UNKNOWN"</code> | <code>"ALLOWED"</code> | <code>"NOT_ALLOWED"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>UNKNOWN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Unknown cancellation policy.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>ALLOWED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Cancellation by the client is allowed.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>NOT_ALLOWED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Cancellation by the client is not allowed.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='supplier'>
+      Supplier
+    </h3>
+
+
+  </div>
+
+
+  <p>Supplier details.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Supplier</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>englishName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The English spelling of the supplier.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>localName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the name of the supplier in the local language.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>logoUrl</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Optional, the logo URL of the supplier (if exists).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>phoneNumber</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Supplier phone number.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Supplier address.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='heremobilitydemanderror'>
+      HereMobilityDemandError
+    </h3>
+
+
+  </div>
+
+
+  <p>HereMobilityDemandError</p>
+
+
+  <div class='pre p1 fill-light mt0'>HereMobilityDemandError</div>
+
+    <p>
+      Type:
+      {reason: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>reason</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='driverdetails'>
+      DriverDetails
+    </h3>
+
+
+  </div>
+
+
+  <p>Details of a driver.</p>
+
+
+  <div class='pre p1 fill-light mt0'>DriverDetails</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The full name of the driver.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>phoneNumber</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The phone number of the driver.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>photoUrl</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? URL pointing to photo of the driver, if one exists. null if it doesn't exist.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>drivingLicenseId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? The driver's driving license number, if available.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='vehicletype'>
+      VehicleType
+    </h3>
+
+
+  </div>
+
+
+
+
+  <div class='pre p1 fill-light mt0'>VehicleType</div>
+
+    <p>
+      Type:
+      (<code>"NOT_SUPPLIED"</code> | <code>"STANDARD"</code> | <code>"LIMO"</code> | <code>"VAN"</code> | <code>"OTHER"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>NOT_SUPPLIED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The supplier did not specify the vehicle type.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>STANDARD</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Standard vehicle.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>LIMO</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Limousine.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>VAN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Van.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>OTHER</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Other type of vehicle.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='vehicle'>
+      Vehicle
+    </h3>
+
+
+  </div>
+
+
+  <p>Vehicle details.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Vehicle</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>licensePlateNumber</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : License plate number.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>vehicleType</span> <code class='quiet'>(<a href="#vehicletype">VehicleType</a>)</code>
+          : The type of the vehicle.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>manufacturer</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The manufacturer of the vehicle.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>model</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The vehicle model.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridestatus'>
+      RideStatus
+    </h3>
+
+
+  </div>
+
+
+  <p>The ride status.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideStatus</div>
+
+    <p>
+      Type:
+      (<code>"PROCESSING"</code> | <code>"REJECTED"</code> | <code>"ACCEPTED"</code> | <code>"DRIVER_ASSIGNED"</code> | <code>"DRIVER_EN_ROUTE"</code> | <code>"AT_PICKUP"</code> | <code>"PASSENGER_ON_BOARD"</code> | <code>"AT_DROP_OFF"</code> | <code>"COMPLETED"</code> | <code>"CANCELLED"</code> | <code>"UNRECOGNIZED"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>PROCESSING</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The request is being "processed" looking for a supplier.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>REJECTED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : None of the suppliers accepted the offer. No driver was assigned.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>ACCEPTED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : A supplier accepted the "ride" no driver was assigned yet.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>DRIVER_ASSIGNED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : A driver was assigned to the ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>DRIVER_EN_ROUTE</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The vehicle is on the way to the pickup point.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>AT_PICKUP</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The vehicle is waiting at the pickup point.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>PASSENGER_ON_BOARD</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The vehicle is on the way to the drop-off point.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>AT_DROP_OFF</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The vehicle arrived at the drop-off point.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>COMPLETED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The ride was completed.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>CANCELLED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The ride was cancelled (either by the driver or by the passenger)
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>UNRECOGNIZED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Unrecognized status of the ride
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridestatuslog'>
+      RideStatusLog
+    </h3>
+
+
+  </div>
+
+
+  <p>A ride's status log. Contains the current status, and a chronological list of previous
+statuses (ordered by timestamp in descending order).</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideStatusLog</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>lastUpdateTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Timestamp of the last update, in milliseconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>createTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The time the ride was created, in milliseconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>closedTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? The time the ride was closed, in milliseconds since Epoch. null for active rides.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>isRideLocationAvailable</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+          : Whether there are new updates on the ride location. The updates can be monitored via
+<a href="#heremobilitysdkdemandregisterforridesupdates">| HereMobilitySDKDemand#registerToRideUpdates </a>
+.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>currentStatus</span> <code class='quiet'>(<a href="#ridestatus">RideStatus</a>)</code>
+          : The current ride status.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>previousStatuses</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#riderecord">RideRecord</a>>)</code>
+          : A list of the previous statuses, ordered by timestamp in descending order.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='riderecord'>
+      RideRecord
+    </h3>
+
+
+  </div>
+
+
+
+
+  <div class='pre p1 fill-light mt0'>RideRecord</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>status</span> <code class='quiet'>(<a href="#ridestatus">RideStatus</a>)</code>
+          : The ride status.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>timestamp</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The timestamp of the status, in milliseconds since Epoch.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridelocation'>
+      RideLocation
+    </h3>
+
+
+  </div>
+
+
+  <p>The current location of the ride.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideLocation</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>rideId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The ride ID.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>vehicleLocation</span> <code class='quiet'>(<a href="#latlng">LatLng</a>)</code>
+          : ? Current location of the vehicle, if available.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedPickupTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? If the passenger was already picked up, will return the known pickup time.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedDropOffTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? If the vehicle already arrived, will return the known drop-off time.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>lastUpdateTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Timestamp of this update, in milliseconds since Epoch.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='passengerdetails'>
+      PassengerDetails
+    </h3>
+
+
+  </div>
+
+
+  <p>The details of a passenger.</p>
+
+
+  <div class='pre p1 fill-light mt0'>PassengerDetails</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The full name (first and last) of the passenger.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>phoneNumber</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The phone number of the passenger.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>photoUrl</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? Optional. A URL pointing to a photo of the passenger. null if doesn't exist.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>email</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? Optional. The email of the passenger, if exists. Return {@code null} if doesn't exist.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='cancellingparty'>
+      CancellingParty
+    </h3>
+
+
+  </div>
+
+
+  <p>Which party cancelled the ride.</p>
+
+
+  <div class='pre p1 fill-light mt0'>CancellingParty</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>DEMANDER</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The demander cancelled the ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>SUPPLIER</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The supplier cancelled the ride.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='cancellationstatus'>
+      CancellationStatus
+    </h3>
+
+
+  </div>
+
+
+  <p>The status of the cancellation request.</p>
+
+
+  <div class='pre p1 fill-light mt0'>CancellationStatus</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>PROCESSING</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The cancellation request has been received and is now being processed. This value will be
+shown if there is a cancellation in progress, and this
+<a href="#cancellationinfo">CancellationInfo</a>
+ is the
+result of
+<a href="#ride">Ride</a>
+ cancellationInfo.
+When receiving
+<a href="#cancellationinfo">CancellationInfo</a>
+ as a result of
+<a href="#heremobilitysdkdemandcancelride">HereMobilitySDKDemand#cancelRide</a>
+,
+this will never be the result.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>ACCEPTED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The cancellation request was accepted.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>REJECTED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The cancellation request was rejected.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>UNKNOWN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The cancellation request is in unknown state.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='cancellationinfo'>
+      CancellationInfo
+    </h3>
+
+
+  </div>
+
+
+  <p>Info about a ride cancellation.</p>
+
+
+  <div class='pre p1 fill-light mt0'>CancellationInfo</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>cancellingParty</span> <code class='quiet'>(<a href="#cancellingparty">CancellingParty</a>)</code>
+          : Who cancelled the ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>cancelReason</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? The reason for the cancellation.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>requestTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The time the request was received at the marketplace.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>status</span> <code class='quiet'>(<a href="#cancellationstatus">CancellationStatus</a>)</code>
+          : The current status of the cancellation request.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ride'>
+      Ride
+    </h3>
+
+
+  </div>
+
+
+  <p>Active Ride.</p>
+
+
+  <div class='pre p1 fill-light mt0'>Ride</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>userId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ID of the user who ordered the ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>rideId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Ride ID, to be sent to the server.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>route</span> <code class='quiet'>(<a href="#ridewaypoints">RideWaypoints</a>)</code>
+          : The route of the ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>prebookPickupTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? The requested pickup time in milliseconds since Epoch. Exists only for pre-booked rides.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>bookingEstimatedPrice</span> <code class='quiet'>(<a href="#priceestimate">PriceEstimate</a>)</code>
+          : ? The price estimate, as was determined by booking time (will not be updated during the ride).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>constraints</span> <code class='quiet'>(<a href="#bookingconstraints">BookingConstraints</a>)</code>
+          : The constraints of the booking (e.g. passenger count, suitcase count...)
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>statusLog</span> <code class='quiet'>(<a href="#ridestatuslog">RideStatusLog</a>)</code>
+          : The status log of the ride (current status and previous statuses).
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>supplier</span> <code class='quiet'>(<a href="#supplier">Supplier</a>)</code>
+          : ? The ride supplier. null if no supplier was assigned.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>passenger</span> <code class='quiet'>(<a href="#passengerdetails">PassengerDetails</a>)</code>
+          : The details of the passenger that is the contact for this ride.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>passengerNote</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? An optional custom note from the passenger to the supplier.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>driver</span> <code class='quiet'>(<a href="#driverdetails">DriverDetails</a>)</code>
+          : ? The details of the driver. null if no driver was assigned.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>vehicle</span> <code class='quiet'>(<a href="#vehicle">Vehicle</a>)</code>
+          : ? The vehicle. null if no vehicle was assigned, or no vehicle info was supplied.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>cancellationPolicy</span> <code class='quiet'>(<a href="#cancellationpolicy">CancellationPolicy</a>)</code>
+          : The cancellation policy.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>cancellationInfo</span> <code class='quiet'>(<a href="#cancellationinfo">CancellationInfo</a>)</code>
+          : ? If the ride was cancelled, contains info about the cancellation. Otherwise null
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='statusfilter'>
+      StatusFilter
+    </h3>
+
+
+  </div>
+
+
+
+
+  <div class='pre p1 fill-light mt0'>StatusFilter</div>
+
+    <p>
+      Type:
+      (<code>"PAST"</code> | <code>"FUTURE"</code> | <code>"ONGOING"</code> | <code>"ALL"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>PAST</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Finished rides (includes the statuses: COMPLETED, REJECTED or CANCELLED) for the last 72 hours.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>FUTURE</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Prebooked rides, up to 30 minutes before arrival time.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>ONGOING</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Ongoing rides.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>ALL</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : All rides.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridequerysorttype'>
+      RideQuerySortType
+    </h3>
+
+
+  </div>
+
+
+
+
+  <div class='pre p1 fill-light mt0'>RideQuerySortType</div>
+
+    <p>
+      Type:
+      (<code>"UPDATE_TIME_ASC"</code> | <code>"UPDATE_TIME_DESC"</code> | <code>"CREATE_TIME_ASC"</code> | <code>"CREATE_TIME_DESC"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>UPDATE_TIME_ASC</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Sort according to update time, ascending
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>UPDATE_TIME_DESC</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Sort according to update time, descending
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>CREATE_TIME_ASC</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Sort according to creation time, ascending
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>CREATE_TIME_DESC</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Sort according to creation time, descending
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridequery'>
+      RideQuery
+    </h3>
+
+
+  </div>
+
+
+  <p>Query to get a list of rides according to given filters.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideQuery</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>fromUpdateTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? Return only rides that were updated since this time. The lowest allowed value is NOW - 3 Hours. If an earlier time is requested, only rides from the last 3 hours will be returned.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>limit</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? Limit number of results to return. If not given, the default is 200
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>statusFilter</span> <code class='quiet'>(<a href="#statusfilter">StatusFilter</a>)</code>
+          : ? Query only for rides with the given status filter. If not given, the default is 'ALL'
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>sortBy</span> <code class='quiet'>(<a href="#ridequerysorttype">RideQuerySortType</a>)</code>
+          : ? In which order to sort the result. If not given, the default is 'UPDATE_TIME_ASC'
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='ridequeryresponse'>
+      RideQueryResponse
+    </h3>
+
+
+  </div>
+
+
+  <p>Response to a <a href="#ridequery">RideQuery</a>; contains the list of rides that match the query filters.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideQueryResponse</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>rides</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#ride">Ride</a>>)</code>
+          : List of rides matching the query filters.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>fromTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Optional, The earliest update time in this result set. Given in seconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>toTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The latest update time in this result set. Given in seconds since Epoch.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='rideofferbase'>
+      RideOfferBase
+    </h3>
+
+
+  </div>
+
+
+  <p>Base class for ride offers.</p>
+
+
+  <div class='pre p1 fill-light mt0'>RideOfferBase</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>type</span> <code class='quiet'>(<a href="#transittype">TransitType</a>)</code>
+          : optional, The type of the offer.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>route</span> <code class='quiet'>(<a href="#ridewaypoints">RideWaypoints</a>)</code>
+          : The suggested route. May be different from the requested route.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedPickupTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : optional, Estimated pickup time, if provided by the supplier. The time is in milliseconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedDropOffTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : optional, Estimated drop-off time, if provided by the supplier. The time is in milliseconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedDurationMs</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : optional, Estimated duration of the ride, in milliseconds, if can be estimated.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedPrice</span> <code class='quiet'>(<a href="#priceestimate">PriceEstimate</a>)</code>
+          : optional, Price estimation, if provided by the supplier.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='taxirideoffer'>
+      TaxiRideOffer
+    </h3>
+
+
+  </div>
+
+
+  <p>Taxi Ride offer.</p>
+
+
+  <div class='pre p1 fill-light mt0'>TaxiRideOffer</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>offerId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The offer ID, to be sent to the server. Not applicable for public transport offers.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>supplier</span> <code class='quiet'>(<a href="#supplier">Supplier</a>)</code>
+          : The supplier.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>expirationTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : is in milliseconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>cancellationPolicy</span> <code class='quiet'>(<a href="#cancellationpolicy">CancellationPolicy</a>)</code>
+          : Ride cancellation policy.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='publictransportrideoffer'>
+      PublicTransportRideOffer
+    </h3>
+
+
+  </div>
+
+
+  <p>Public Transport ride offer.</p>
+
+
+  <div class='pre p1 fill-light mt0'>PublicTransportRideOffer</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>transfers</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : Number of transport changes to reach the destination.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>legs</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#publictransportrouteleg">PublicTransportRouteLeg</a>>)</code>
+          : A list of transportation sections for the route.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='transportmode'>
+      TransportMode
+    </h3>
+
+
+  </div>
+
+
+  <p>The transport mode of this leg.</p>
+
+
+  <div class='pre p1 fill-light mt0'>TransportMode</div>
+
+    <p>
+      Type:
+      (<code>"UNKNOWN"</code> | <code>"HIGH_SPEED_TRAIN"</code> | <code>"INTERCITY_TRAIN"</code> | <code>"INTER_REGIONAL_TRAIN"</code> | <code>"REGIONAL_TRAIN"</code> | <code>"CITY_TRAIN"</code> | <code>"BUS"</code> | <code>"FERRY"</code> | <code>"SUBWAY"</code> | <code>"LIGHT_RAIL"</code> | <code>"PRIVATE_BUS"</code> | <code>"INCLINED"</code> | <code>"AERIAL"</code> | <code>"BUS_RAPID"</code> | <code>"MONORAIL"</code> | <code>"WALK"</code>)
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>UNKNOWN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Unknown mode.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>HIGH_SPEED_TRAIN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : High-speed train.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>INTERCITY_TRAIN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Intercity train.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>INTER_REGIONAL_TRAIN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Inter-regional train.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>REGIONAL_TRAIN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Regional train.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>CITY_TRAIN</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : City train.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>BUS</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Bus.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>FERRY</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Ferry or boat.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>SUBWAY</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Subway or metro.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>LIGHT_RAIL</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Light rail.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>PRIVATE_BUS</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Private bus.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>INCLINED</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Inclined elevator or Funicular.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>AERIAL</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Aerial leg (e.g. Cable car)
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>BUS_RAPID</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Bus rapid.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>MONORAIL</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Monorail.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>WALK</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Walking leg.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='publictransportrouteleg'>
+      PublicTransportRouteLeg
+    </h3>
+
+
+  </div>
+
+
+  <p>Leg in the Public Transport Route.</p>
+
+
+  <div class='pre p1 fill-light mt0'>PublicTransportRouteLeg</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>transportMode</span> <code class='quiet'>(<a href="#transportmode">TransportMode</a>)</code>
+          : The transport mode of this leg.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedDurationMs</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? The estimated duration of this leg, in milliseconds, if known.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>length</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? The length of the leg in meters, if known in advance.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>lineName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? The name of the line. null if transportMode is
+<a href="TransportMode#WALK">#transportmode</a>
+, otherwise always exist.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>operatorName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : ? The operator of the line.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>origin</span> <code class='quiet'>(<a href="#waypoint">Waypoint</a>)</code>
+          : The start point of the leg.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedDepartureTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? The estimated departure time, if known. Given in milliseconds since epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>destination</span> <code class='quiet'>(<a href="#waypoint">Waypoint</a>)</code>
+          : The end point of the leg.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>estimatedArrivalTime</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : ? The estimated arrival time, if known. Given in milliseconds since epoch.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='rideoffers'>
+      RideOffers
+    </h3>
+
+
+  </div>
+
+
+  <p>Ride Offer object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new RideOffers(offers: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#rideofferbase">RideOfferBase</a>>)</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>offers</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#rideofferbase">RideOfferBase</a>>)</code>
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+
+    <div class='border-bottom' id='rideoffersall'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>all()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>An array of rides offers.</p>
+
+
+  <div class='pre p1 fill-light mt0'>all(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#rideofferbase">RideOfferBase</a>></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#rideofferbase">RideOfferBase</a>></code>:
+        An array of ride offers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='rideofferstaxioffers'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>taxiOffers()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>An array of taxi ride offer.</p>
+
+
+  <div class='pre p1 fill-light mt0'>taxiOffers(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#taxirideoffer">TaxiRideOffer</a>></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#taxirideoffer">TaxiRideOffer</a>></code>:
+        An array of taxi offers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+    <div class='border-bottom' id='rideofferspublictransportoffers'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>publicTransportOffers()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+
+  <p>An array of public transport ride offer.</p>
+
+
+  <div class='pre p1 fill-light mt0'>publicTransportOffers(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#publictransportrideoffer">PublicTransportRideOffer</a>></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#publictransportrideoffer">PublicTransportRideOffer</a>></code>:
+        An array of public transport ride offers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='user'>
+      User
+    </h3>
+
+
+  </div>
+
+
+  <p>Represents a user.</p>
+
+
+  <div class='pre p1 fill-light mt0'>User</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>userId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : The unique ID of the user.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>expirationSec</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          : The expiration of the hash, in seconds since Epoch.
+
+
+        </div>
+
+        <div class='space-bottom0'>
+          <span class='code bold'>hash</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : Signed hash that contains the userId and expiration seconds.
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
